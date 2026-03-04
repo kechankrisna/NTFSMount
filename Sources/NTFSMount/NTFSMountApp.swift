@@ -45,7 +45,7 @@ struct NTFSMountApp: App {
                 .environmentObject(prefs)
         }
         .windowStyle(.hiddenTitleBar)
-        .defaultSize(width: 520, height: 420)
+        .defaultSize(width: 540, height: 510)
         .windowResizability(.contentSize)
     }
 }
