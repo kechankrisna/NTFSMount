@@ -6,9 +6,16 @@
 # =============================================================================
 set -euo pipefail
 
+# Resolve to repo root (parent of scripts/)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$PROJECT_DIR"
+
+# Confirm Package.swift is here
+if [[ ! -f "Package.swift" ]]; then
+  echo "Error: Package.swift not found in $PROJECT_DIR" >&2
+  exit 1
+fi
 
 VERSION="${1:-1.0.0}"
 APP="NTFSMount.app"

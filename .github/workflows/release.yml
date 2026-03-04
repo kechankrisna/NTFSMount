@@ -1,6 +1,7 @@
 name: Release
 
-# Triggers when you push a version tag: git tag v1.0.0 && git push --tags
+# Triggers when you push a version tag:
+#   git tag v1.0.0 && git push --tags
 on:
   push:
     tags:
@@ -12,7 +13,7 @@ permissions:
 jobs:
   build-dmg:
     name: Build · Package · Release
-    runs-on: macos-14   # macOS 14 Sonoma — matches the app's deployment target
+    runs-on: macos-14   # macOS 14 Sonoma — matches the app deployment target
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -20,51 +21,41 @@ jobs:
         uses: actions/checkout@v4
 
       # ── 2. Build universal binary (arm64 + x86_64) ─────────────────────────
+      # Package.swift is at the repo root — no working-directory needed.
       - name: Build arm64
         run: swift build -c release --arch arm64
-        working-directory: NTFSMount
 
       - name: Build x86_64
         run: swift build -c release --arch x86_64
-        working-directory: NTFSMount
 
       - name: Lipo — combine into universal binary
-        working-directory: NTFSMount
         run: |
           lipo -create -output NTFSMount-universal \
             .build/arm64-apple-macosx/release/NTFSMount \
             .build/x86_64-apple-macosx/release/NTFSMount
-          file NTFSMount-universal   # confirm it is fat binary
+          file NTFSMount-universal   # confirm fat binary
 
       # ── 3. Assemble .app bundle ────────────────────────────────────────────
       - name: Assemble NTFSMount.app
-        working-directory: NTFSMount
         run: |
           VERSION="${{ github.ref_name }}"
-          VERSION="${VERSION#v}"      # strip leading 'v'  e.g. v1.2.3 → 1.2.3
+          VERSION="${VERSION#v}"      # strip leading 'v'  →  1.2.3
 
           APP="NTFSMount.app"
           mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 
-          # Executable
           cp NTFSMount-universal "$APP/Contents/MacOS/NTFSMount"
           chmod +x "$APP/Contents/MacOS/NTFSMount"
 
-          # Info.plist — patch in real version string
+          # Patch the real version into Info.plist
           sed "s/<string>1\.0\.0<\/string>/<string>${VERSION}<\/string>/g; \
                s/<string>1<\/string>/<string>${VERSION}<\/string>/g" \
             Sources/NTFSMount/Info.plist > "$APP/Contents/Info.plist"
 
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-          echo "APP=$APP"         >> "$GITHUB_ENV"
 
       # ── 4. Ad-hoc code sign ────────────────────────────────────────────────
-      # Ad-hoc signing ("-") works without an Apple Developer account.
-      # Users must right-click → Open the first time to bypass Gatekeeper.
-      # Replace "-" with your "Developer ID Application: ..." cert name for
-      # notarized builds that open without any warning.
       - name: Code sign (ad-hoc)
-        working-directory: NTFSMount
         run: |
           codesign --force --deep --sign - \
                    --options runtime \
@@ -73,11 +64,9 @@ jobs:
 
       # ── 5. Build DMG ───────────────────────────────────────────────────────
       - name: Create DMG
-        working-directory: NTFSMount
         run: |
           DMG="NTFSMount-v${{ env.VERSION }}.dmg"
 
-          # Staging folder: app + Applications symlink for drag-install UX
           mkdir -p dmg_staging
           cp -r NTFSMount.app dmg_staging/
           ln -sf /Applications dmg_staging/Applications
@@ -91,8 +80,6 @@ jobs:
             "$DMG"
 
           echo "DMG=$DMG" >> "$GITHUB_ENV"
-
-          # Print SHA-256 for the release notes
           shasum -a 256 "$DMG"
 
       # ── 6. Create GitHub Release and attach DMG ────────────────────────────
@@ -113,7 +100,7 @@ jobs:
             1. Download **`NTFSMount-v${{ env.VERSION }}.dmg`** below
             2. Open the DMG and drag **NTFSMount.app** → **Applications**
             3. **First launch only:** right-click the app → **Open** to bypass Gatekeeper
-               *(This is a free, ad-hoc-signed build — no Apple Developer subscription required)*
+               *(Ad-hoc signed — no Apple Developer subscription required)*
 
             ### ✅ Requirements
 
@@ -122,22 +109,16 @@ jobs:
               ```
               brew install --cask macfuse
               ```
-              Then approve in System Settings → Privacy & Security
+              Then approve in **System Settings → Privacy & Security**
             - **ntfs-3g** filesystem driver:
               ```
               brew install gromgit/fuse/ntfs-3g-mac
               ```
 
-            See [USER_GUIDE.md](https://github.com/${{ github.repository }}/blob/main/NTFSMount/USER_GUIDE.md) for full setup instructions.
+            See [USER_GUIDE.md](https://github.com/${{ github.repository }}/blob/main/USER_GUIDE.md) for full setup instructions.
 
-            ---
-
-            ### 🔒 SHA-256 Checksum
-            ```
-            $(shasum -a 256 NTFSMount/NTFSMount-v${{ env.VERSION }}.dmg | awk '{print $1}')  NTFSMount-v${{ env.VERSION }}.dmg
-            ```
           draft: false
           prerelease: false
-          files: NTFSMount/${{ env.DMG }}
+          files: ${{ env.DMG }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,6 +1,6 @@
 name: CI
 
-# Runs on every push and pull request to main — catches build errors early.
+# Build check on every push and pull request to main.
 on:
   push:
     branches: [main, master]
@@ -19,16 +19,15 @@ jobs:
       - name: Swift version
         run: swift --version
 
+      # Package.swift is at the repo root — no working-directory needed.
       - name: Build (debug)
         run: swift build
-        working-directory: NTFSMount
 
       - name: Build (release)
         run: swift build -c release
-        working-directory: NTFSMount
 
       - name: Verify binary exists
         run: |
-          test -f NTFSMount/.build/release/NTFSMount \
+          test -f .build/release/NTFSMount \
             && echo "✓ Binary built successfully" \
             || (echo "✗ Binary not found" && exit 1)
