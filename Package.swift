@@ -1,4 +1,7 @@
 // swift-tools-version: 5.9
+// NTFSMount — NTFS read/write for macOS
+// Author: KECHANKRISNA <ke.chankrisna168@gmail.com>
+// License: GPL-3.0
 import PackageDescription
 
 let package = Package(

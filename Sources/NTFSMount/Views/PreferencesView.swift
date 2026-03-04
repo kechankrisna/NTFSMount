@@ -222,7 +222,7 @@ private struct AboutTab: View {
                 Text("Version 1.0.0")
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
-                Text("Free, open-source NTFS for macOS")
+                Text("By KECHANKRISNA · Free, open-source NTFS for macOS")
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
             }

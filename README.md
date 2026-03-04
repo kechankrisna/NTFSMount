@@ -4,6 +4,8 @@
 
 macOS can read NTFS drives out of the box but cannot write to them natively. NTFSMount sits in your menu bar and mounts any NTFS drive with full read/write access in one click — no Terminal required.
 
+**Author:** [KECHANKRISNA](mailto:ke.chankrisna168@gmail.com)
+
 ![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-blue)
 ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
@@ -85,7 +87,7 @@ brew install gromgit/fuse/ntfs-3g-mac
 
 ```bash
 # Clone the repository
-git clone https://github.com/ntfsmount/ntfsmount.git
+git clone https://github.com/KECHANKRISNA/ntfsmount.git
 cd ntfsmount/NTFSMount
 
 # Open in Xcode
@@ -290,3 +292,7 @@ Please open an issue first for significant changes so the approach can be discus
 GPL-3.0 — see [LICENSE](LICENSE).
 
 Built on [macFUSE](https://osxfuse.github.io) (BSD) and [ntfs-3g](https://github.com/tuxera/ntfs-3g) (GPL-2.0+).
+
+---
+
+*© 2026 KECHANKRISNA · [ke.chankrisna168@gmail.com](mailto:ke.chankrisna168@gmail.com)*

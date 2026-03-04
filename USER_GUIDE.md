@@ -284,3 +284,4 @@ To completely remove NTFSMount and its components:
 
 *NTFSMount is free and open-source software, released under the GPL-3.0 license.*
 *Built on macFUSE and ntfs-3g.*
+*© 2026 KECHANKRISNA · [ke.chankrisna168@gmail.com](mailto:ke.chankrisna168@gmail.com)*
