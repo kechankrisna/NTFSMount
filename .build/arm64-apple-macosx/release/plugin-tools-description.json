@@ -3,7 +3,20 @@
 
   ],
   "copyCommands" : {
-
+    "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount_NTFSMount.bundle/AppIcon.icns" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Resources/AppIcon.icns"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount_NTFSMount.bundle/AppIcon.icns"
+        }
+      ]
+    }
   },
   "explicitTargetDependencyImportCheckingMode" : {
     "none" : {
@@ -68,7 +81,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<NTFSMount-x86_64-apple-macosx26.0-release.module-resources>"
         },
         {
           "kind" : "file",
@@ -89,7 +110,8 @@
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveRowView.swift.o",
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/EmptyStateView.swift.o",
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/OnboardingView.swift.o",
-        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swift.o"
+        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swift.o",
+        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -101,7 +123,7 @@
         "-O",
         "-j8",
         "-DSWIFT_PACKAGE",
-        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
         "-module-cache-path",
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/ModuleCache",
         "-parseable-output",
@@ -192,6 +214,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/Modules/NTFSMount.swiftmodule"
         }
       ],
@@ -207,7 +233,8 @@
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/DriveRowView.swift",
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/EmptyStateView.swift",
         "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/OnboardingView.swift",
-        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift"
+        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift",
+        "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build",
       "wholeModuleOptimization" : true
@@ -235,6 +262,7 @@
       "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/EmptyStateView.swift",
       "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/OnboardingView.swift",
       "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift",
+      "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/Modules",
       "-target",
@@ -246,7 +274,7 @@
       "-O",
       "-j8",
       "-DSWIFT_PACKAGE",
-      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
       "-module-cache-path",
       "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/ModuleCache",
       "-parseable-output",
@@ -359,6 +387,10 @@
         {
           "kind" : "file",
           "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
       "outputFilePath" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/sources"
@@ -413,6 +445,10 @@
         {
           "kind" : "file",
           "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.swift.o"
         }
       ],
       "outputFilePath" : "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.product/Objects.LinkFileList"

@@ -16,6 +16,9 @@ let package = Package(
         .executableTarget(
             name: "NTFSMount",
             path: "Sources/NTFSMount",
+            resources: [
+                .copy("Resources/AppIcon.icns")
+            ],
             linkerSettings: [
                 .linkedFramework("AppKit"),
                 .linkedFramework("Foundation")

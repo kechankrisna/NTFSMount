@@ -69,5 +69,11 @@
     "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView~partial.swiftmodule",
     "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swiftdeps",
     "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DerivedSources/resource_bundle_accessor.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/resource_bundle_accessor.dia"
   }
 }

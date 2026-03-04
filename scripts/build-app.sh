@@ -64,6 +64,12 @@ mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp NTFSMount-universal "$APP/Contents/MacOS/NTFSMount"
 chmod +x "$APP/Contents/MacOS/NTFSMount"
 
+# Copy app icon
+if [[ -f "Sources/NTFSMount/Resources/AppIcon.icns" ]]; then
+  cp Sources/NTFSMount/Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+  echo "  Icon: AppIcon.icns copied"
+fi
+
 # Patch version + expand Xcode build variable $(EXECUTABLE_NAME) → NTFSMount
 # Without this macOS reports "app may be damaged or incomplete" because it
 # looks for a binary literally named "$(EXECUTABLE_NAME)" and can't find it.
