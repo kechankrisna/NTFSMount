@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>NTFSMount</string>
+    <key>CFBundleDisplayName</key>
+    <string>NTFSMount</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.ntfsmount.app</string>
+    <key>CFBundleVersion</key>
+    <string>1.0.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <!-- Hide from Dock — runs as menu bar only app -->
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2026 KECHANKRISNA. GPL-3.0 License.</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <!-- Required for Notification Center -->
+    <key>NSUserNotificationAlertStyle</key>
+    <string>banner</string>
+    <!-- Required for diskutil access (sandbox disabled for privileged ops) -->
+    <key>com.apple.security.app-sandbox</key>
+    <false/>
+    <key>com.apple.security.files.all</key>
+    <true/>
+</dict>
+</plist>

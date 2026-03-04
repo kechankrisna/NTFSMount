@@ -64,9 +64,12 @@ mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp NTFSMount-universal "$APP/Contents/MacOS/NTFSMount"
 chmod +x "$APP/Contents/MacOS/NTFSMount"
 
-# Patch version into Info.plist
-sed "s/<string>1\.0\.0<\/string>/<string>${VERSION}<\/string>/g; \
-     s/<string>1<\/string>/<string>${VERSION}<\/string>/g" \
+# Patch version + expand Xcode build variable $(EXECUTABLE_NAME) → NTFSMount
+# Without this macOS reports "app may be damaged or incomplete" because it
+# looks for a binary literally named "$(EXECUTABLE_NAME)" and can't find it.
+sed "s/\$(EXECUTABLE_NAME)/NTFSMount/g; \
+     s/<string>1\.0\.0<\/string>/<string>${VERSION}<\/string>/g; \
+     s|<string>1</string>|<string>${VERSION}</string>|g" \
   Sources/NTFSMount/Info.plist > "$APP/Contents/Info.plist"
 
 rm -f NTFSMount-universal

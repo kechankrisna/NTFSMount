@@ -1,0 +1,73 @@
+{
+  "": {
+    "dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMount.d",
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMount.o",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/master.swiftdeps"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/DiskScanner.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DiskScanner.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DiskScanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DiskScanner.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DiskScanner.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/NTFSMounter.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMounter.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMounter~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMounter.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMounter.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/PreferencesManager.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesManager.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesManager.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesManager.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Models/MountError.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/MountError.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/MountError~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/MountError.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/MountError.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Models/NTFSDrive.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSDrive.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSDrive~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSDrive.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSDrive.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/NTFSMountApp.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMountApp.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMountApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMountApp.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/NTFSMountApp.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/DriveListView.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveListView.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveListView.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveListView.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/DriveRowView.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveRowView.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveRowView~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveRowView.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/DriveRowView.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/EmptyStateView.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/EmptyStateView.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/EmptyStateView~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/EmptyStateView.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/EmptyStateView.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/OnboardingView.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/OnboardingView.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/OnboardingView~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/OnboardingView.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/OnboardingView.dia"
+  },
+  "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift": {
+    "object": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swift.o",
+    "swiftmodule": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.swiftdeps",
+    "diagnostics": "/Users/whitehat/Desktop/ntfsmacos/NTFSMount/.build/x86_64-apple-macosx/release/NTFSMount.build/PreferencesView.dia"
+  }
+}

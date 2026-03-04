@@ -47,9 +47,13 @@ jobs:
           cp NTFSMount-universal "$APP/Contents/MacOS/NTFSMount"
           chmod +x "$APP/Contents/MacOS/NTFSMount"
 
-          # Patch the real version into Info.plist
-          sed "s/<string>1\.0\.0<\/string>/<string>${VERSION}<\/string>/g; \
-               s/<string>1<\/string>/<string>${VERSION}<\/string>/g" \
+          # Patch Info.plist:
+          #   1. Expand $(EXECUTABLE_NAME) — Xcode variable never substituted by SPM.
+          #      Without this macOS says "app may be damaged or incomplete".
+          #   2. Inject the real version number from the git tag.
+          sed "s/\$(EXECUTABLE_NAME)/NTFSMount/g; \
+               s/<string>1\.0\.0<\/string>/<string>${VERSION}<\/string>/g; \
+               s|<string>1</string>|<string>${VERSION}</string>|g" \
             Sources/NTFSMount/Info.plist > "$APP/Contents/Info.plist"
 
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"

@@ -1,0 +1,11 @@
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/DiskScanner.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/NTFSMounter.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Core/PreferencesManager.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Models/MountError.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Models/NTFSDrive.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/NTFSMountApp.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/DriveListView.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/DriveRowView.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/EmptyStateView.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/OnboardingView.swift
+/Users/whitehat/Desktop/ntfsmacos/NTFSMount/Sources/NTFSMount/Views/PreferencesView.swift
