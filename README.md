@@ -6,6 +6,8 @@ macOS can read NTFS drives out of the box but cannot write to them natively. NTF
 
 **Author:** [KECHANKRISNA](mailto:ke.chankrisna168@gmail.com)
 
+[![Release](https://img.shields.io/github/v/release/kechankrisna/NTFSMount?label=download&logo=github)](https://github.com/kechankrisna/NTFSMount/releases/latest)
+[![CI](https://github.com/kechankrisna/NTFSMount/actions/workflows/ci.yml/badge.svg)](https://github.com/kechankrisna/NTFSMount/actions/workflows/ci.yml)
 ![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-blue)
 ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
@@ -24,8 +26,17 @@ macOS can read NTFS drives out of the box but cannot write to them natively. NTF
 - [Project Structure](#project-structure)
 - [Architecture](#architecture)
 - [Troubleshooting](#troubleshooting)
+- [Download](#download)
 - [Contributing](#contributing)
 - [License](#license)
+
+---
+
+## Download
+
+**[⬇ Download the latest release DMG](https://github.com/kechankrisna/NTFSMount/releases/latest)**
+
+Or build from source — see [Building from Source](#building-from-source).
 
 ---
 
@@ -87,8 +98,8 @@ brew install gromgit/fuse/ntfs-3g-mac
 
 ```bash
 # Clone the repository
-git clone https://github.com/KECHANKRISNA/ntfsmount.git
-cd ntfsmount/NTFSMount
+git clone https://github.com/kechankrisna/NTFSMount.git
+cd NTFSMount
 
 # Open in Xcode
 open Package.swift

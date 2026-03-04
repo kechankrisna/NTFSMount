@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Not sandboxed — required to run ntfs-3g and diskutil as root -->
+    <key>com.apple.security.app-sandbox</key>
+    <false/>
+
+    <!-- Read/write access to all volumes (needed for NTFS mount points) -->
+    <key>com.apple.security.files.all</key>
+    <true/>
+
+    <!-- Allow running privileged helper tools (osascript / sudo) -->
+    <key>com.apple.security.temporary-exception.sbpl</key>
+    <array>
+        <string>(allow process-exec (literal "/usr/bin/sudo"))</string>
+        <string>(allow process-exec (literal "/usr/bin/osascript"))</string>
+    </array>
+</dict>
+</plist>
